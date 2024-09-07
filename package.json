@@ -2,9 +2,11 @@
   "name": "ecommerce",
   "version": "1.0.0",
   "description": "mern ecommerce full stack project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx nodemon ./backend/server.js",
+    "dev": "set NODE_ENV=development && npx nodemon ./backend/server.js",
+    "prod": "set NODE_ENV=production && npx nodemon ./backend/server.js"
   },
   "author": "hisham dulfacker",
   "license": "ISC",
